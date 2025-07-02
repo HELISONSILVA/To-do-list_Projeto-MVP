@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('img/to-do-List.png');
+  background-size: cover;
+  background-position: center;
+  font-family: "Francois One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.title {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Caixa de inserção */
+.newItem {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+#newInput, #newUrgency, #newData {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#newInput {
+  flex: 1 1 250px;
+}
+
+#newUrgency {
+  flex: 1 1 120px;
+}
+
+#newData {
+  flex: 1 1 150px;
+}
+
+.addBtn {
+  padding: 10px 15px;
+  background-color: rgb(35, 32, 24);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #2ab53a;
+  color: white;
+}
+
+/* Tabela */
+.items {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 12px 10px;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+th {
+  background-color: #eee;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 35%;
+  text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 15%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 30%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 5%;
+}
+
+.close {
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+  <header class="title">
+    <h1>To do List</h1>
+  </header>
+
+  <section class="newItem">
+    <input type="text" id="newInput" placeholder="Adicionar novo item:" />
+    
+    <select id="newUrgency">
+      <option value="">Selecione a urgência</option>
+      <option value="Baixa">Baixa</option>
+      <option value="Média">Média</option>
+      <option value="Alta">Alta</option>
+    </select>
+
+    <input type="date" id="newData" />
+
+    <button onclick="newItem()" class="addBtn">Adicionar</button>
+  </section>
+
+  <section class="items">
+    <table id="myTable">
+      <tr>
+        <th>Item</th>
+        <th>Urgência</th>
+        <th>Data</th>
+        <th>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/126/126468.png"
+            width="15px"
+            height="15px"
+          />
+        </th>
+      </tr>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
